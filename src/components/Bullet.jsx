@@ -13,7 +13,7 @@ export default function Bullet(props) {
   return (
     <mesh castShadow ref={ref}>
       <sphereGeometry args={args} />
-      <meshStandardMaterial color={'#c800de'} />
+      <meshStandardMaterial color={'#ff00bb'} />
     </mesh>
   );
 }

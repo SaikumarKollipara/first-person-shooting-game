@@ -1,4 +1,4 @@
-import { PointerLockControls, Sky, Text } from '@react-three/drei';
+import { PointerLockControls, Sky, Sparkles, Text } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense } from 'react';
 import Floor from './Floor';
@@ -31,6 +31,7 @@ export default function Experience({ updateScore }) {
         <ambientLight intensity={1} />
         <directionalLight position={[-2, 10, 2]} />
         <PointerLockControls />
+        <Sparkles count={500} scale={[20, 20, 10]} size={3} speed={2} />
         <Sky />
         <Physics>
           <Player position={[0, 4, 0]} color={'yellow'} />
